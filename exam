@@ -1,0 +1,91 @@
+-- 1 task
+-- create table Student(
+--  id BIGINT primary key,
+--  name Varchar(50),
+--  birthday date,
+--  groupa INT
+-- );
+
+-- create table Subject(
+--  id BIGINT primary key,
+--  name Varchar(50),
+--  description varchar(50),
+--  grade INT 
+-- );
+
+-- create table PaymentType(
+--  id BIGINT primary key,
+--  name varchar(50)
+-- );
+
+-- create table Payment(
+--  id bigint primary key,
+--  type_id bigint,
+--  amount int,
+--  student_id bigint,
+--  payment_date TIMESTAMP,
+--  FOREIGN KEY (type_id) REFERENCES PaymentType(id),
+--  FOREIGN KEY (student_id) REFERENCES Student(id)
+-- );
+
+-- create table mark(
+--  id bigint primary key,
+--  student_id bigint,
+--  subject_id bigint,
+--  mark int,
+--  FOREIGN KEY (student_id) REFERENCES student(id),
+--  FOREIGN KEY (subject_id) REFERENCES subject(id)
+-- );
+
+-- 2 task
+
+-- insert into Student(id, name, groupa) values(1, 'Jhon', 1);
+-- insert into Student(id, name, groupa) values(2, 'Chris', 1);
+-- insert into Student(id, name, groupa) values(3, 'Carl',1);
+
+-- insert into Student(id, name, groupa) values(4, 'Oliver', 2);
+-- insert into Student(id, name, groupa) values(5, 'James', 2);
+-- insert into Student(id, name, groupa) values(6,'Lucas', 2);
+-- insert into Student(id, name, groupa) values(7, 'Henry', 2);
+
+
+-- insert into Student(id, name, groupa) values(8, 'Jacob', 3);
+-- insert into Student(id, name, groupa) values(9,'Logan',3);
+
+-- insert into Student(id, name, groupa) values(10, 'Phil', 4);
+-- insert into Student(id, name, groupa) values(11, 'Jack', 4);
+-- insert into Student(id, name, groupa) values(12, 'Erling', 4);
+-- insert into Student(id, name, groupa) values(13,'Kyle', 4);
+-- insert into Student(id, name, groupa) values(14, 'Manuel', 4);
+
+-- insert into Student(id, name, groupa) values(15, 'Tibo', 5);
+-- insert into Student(id, name, groupa) values(16, 'Alex', 5);
+-- insert into Student(id, name, groupa) values(17, 'Franklin', 5);
+-- insert into Student(id, name, groupa) values(18,'Michael', 5);
+-- insert into Student(id, name, groupa) values(19, 'Trevor', 5);
+
+-- insert into Subject(id, name, grade) values(1, 'Art', 1);
+-- insert into Subject(id, name, grade) values(2, 'music',1);
+
+-- insert into Subject(id, name, grade) values(3, 'Geography',2);
+-- insert into Subject(id, name, grade) values(4, 'history',2);
+
+-- insert into Subject(id, name, grade) values(5, 'PE',3);
+-- insert into Subject(id ,name, grade) values(6, 'math',3);
+
+-- insert into Subject(id, name, grade) values(7, 'Scientse',4);
+-- insert into Subject(id, name, grade) values(8 ,'IT',4);
+
+-- insert into Subject(id, name, grade) values(9, 'art',5);
+-- insert into Subject(id, name, grade) values(10, 'english',5);
+
+-- insert into PaymentType(id, name) values(1, 'Daily');
+-- insert into PaymentType(id, name) values(2, 'Monthly');
+-- insert into PaymentType(id, name) values(3, 'Weekly');
+
+
+-- 4 task
+-- Select FROM Student;
+-- Select FROM Student LIMIT 50;
+-- Select name FROM Student;
+-- SELECT DISTINCT Amount FROM Payment;
